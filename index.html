@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vibe2book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💭❤️ Vibe2book – Feel it, Read it 📚</h1>
+        <label for="userInput">Describe how you're feeling:</label>
+        <textarea id="userInput" rows="4" cols="50" placeholder="e.g., I’m feeling anxious and overwhelmed..."></textarea>
+        <br><br>
+        <button onclick="getEmotionAndRecommend()">Get Recommendations</button>
+
+        <div id="recommendations" class="book-list"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
